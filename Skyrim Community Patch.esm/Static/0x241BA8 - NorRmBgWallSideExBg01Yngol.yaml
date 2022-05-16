@@ -1,0 +1,27 @@
+# Form ID - Possibly not required as it's in the file name?
+ID: 0x241BA8
+# Header data for this form ID - some values are implicit and use the game defaults.
+Record Header: 
+  - Signature: 'STAT'
+  - Form Version: 44
+# Editor ID - Possibly not required as it would be in the file name?
+EDID: 'NorRmBgWallSideExBg01Yngol'
+# Object Bounds - The size of the bounding box for this object
+OBND: 
+  - X1: -128
+  - Y1: -256
+  - Z1: -384
+  - X2: -75
+  - Y2: 256
+  - Z2: 318
+# Model - The referenced NIF for this object
+MODEL: 
+  # Model File Name - Direct reference to the asset (relative to the data folder)
+  - MODL: 'usleep\dungeons\nordic\bgrooms\NorRmBgWallSideExBg01Yngol.nif'
+  # Do we need to include this asset when building? If false, we assume it's present. 
+  - Pack Asset: True
+# Directional Material - Overlay texture of snow/moss/ash/etc
+DNAM: 
+  - Max Angle: 90.000000
+  - Material: null
+  - Flags: []

@@ -1,0 +1,58 @@
+# Form ID - Possibly not required as it's in the file name?
+ID: 0x06D8B5
+# Header data for this form ID - some values are implicit and use the game defaults.
+Record Header: 
+  - Signature: 'ACTI'
+  - Form Version: 44
+# Editor ID - Possibly not required as it would be in the file name?
+EDID: 'USLEEPVisualEffectsRemover'
+# VMAD - Script properties
+VMAD: 
+  - Version: 5
+  - Object Format: 2
+  - Scripts: [
+    - USKPVisualEffectsRemovalScript:
+      - Flags: [ 'Local' ]
+      - Properties: [
+          AtronachFlameTrail:
+            - Type: Object
+            - Flags: [ 'Edited' ]
+            - Value: 
+              - Type: 'FormID'
+              - FormID: 0x060D9D|Skyrim.esm #FXAtronachFireTrailEffect 
+              - Alias: null,
+          AtronachFrostFXS: 
+            - Type: Object
+            - Flags: [ 'Edited' ]
+            - Value: 
+              - Type: 'FormID'
+              - FormID: 0x05FB82|Skyrim.esm #AtronachFrostFXS 
+              - Alias: null,
+      ],
+      # Skipped a bunch of other proprties for this example, but you get the idea!
+  ]
+# Object Bounds - The size of the bounding box for this object
+OBND: 
+  - X1: -12
+  - Y1: -16
+  - Z1: 55
+  - X2: 12
+  - Y2: 13
+  - Z2: 89
+# Name of the object
+FULL: 'Shrine of Cleansing'
+# Model - The referenced NIF for this object
+MODEL: 
+  # Model File Name - Direct reference to the asset (relative to the data folder)
+  - MODL: 'Clutter\Shrines\ShrineKynareth.nif'
+  # Do we need to include this asset when building? If false, we assume it's present. 
+  - Pack Asset: false
+# Marker colours - used in the Creation Kit (Maybe this could be simplified into a HEX value?)
+PNAM: 
+  - Red: 204
+  - Green: 76
+  - Blue: 51
+# Activation Override Text - Text to show instead of "Activate" in the game
+RNAM: 'Remove Unwanted Visual Effects'
+# Flags on this record.
+FNAM: []

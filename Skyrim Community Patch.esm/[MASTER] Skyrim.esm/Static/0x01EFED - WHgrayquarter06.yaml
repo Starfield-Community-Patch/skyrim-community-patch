@@ -1,0 +1,29 @@
+# Form ID - Possibly not required as it's in the file name?
+ID: 0x06D8B5
+# Header data for this form ID - some values are implicit and use the game defaults.
+Record Header: 
+  - Signature: 'STAT'
+  - Form Version: 44
+# Editor ID - Possibly not required as it would be in the file name?
+EDID: 'WHgrayquarter06'
+# Override information
+Override:
+  # Full or partial override - full replaces all values on the record with this data, partial only overwrites the data here.
+  - Type: 'Partial'
+  # Policy relating to partial overrides - "Any" overwrites any plugin loaded last with this data (such as a DLC) whereas "Exact" will only copy data from the named plugin.
+  - Policy: 'Exact'
+# Directional Material - Overlay texture of snow/moss/ash/etc
+DNAM: 
+  - Max Angle: 90.000000
+  - Material: 0x025129|Skyrim.esm #SnowMaterialObject1P
+  - Flags: []
+# Fix Details
+Fix Details: 
+  - Changes: [
+      01-01-2022: 
+        - Note: 'Corrected snow material and angle to prevent visual inconsistencies.'
+        - Contributor: 
+          - Name: 'SomeAuthor'
+          - URL: 'https://nexusmods.com/users/0'
+          - Ticket: '#123',
+  ]
